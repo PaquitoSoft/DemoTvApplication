@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Access internet-based media -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- For writing to home screen channels -->
+    <uses-permission android:name="com.android.providers.tv.permission.WRITE_EPG_DATA" />
+
+    <!-- Touch screen is not required -->
+    <uses-feature
+        android:name="android.hardware.touchscreen"
+        android:required="false" />
+
+    <!-- This is an Android TV app only (not intended for mobile) -->
+    <uses-feature
+        android:name="android.software.leanback"
+        android:required="true" />
+
+
+    <application
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.DemoTvApplication" />
+
+</manifest>
